@@ -1,0 +1,5 @@
+{
+  "name": "devbox-fixture",
+  "version": "1.0.0",
+  "description": "DevBox Customize verification fixture: one skill, one rule, one hook set and one stdio MCP server."
+}

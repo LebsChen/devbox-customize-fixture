@@ -1,0 +1,8 @@
+{
+  "UserPromptSubmit": [
+    {"hooks": [{"type": "command", "command": "date -u +%FT%TZ >> /tmp/devbox-fixture-hook.log; printf '%s' '{\"hookSpecificOutput\":{\"hookEventName\":\"UserPromptSubmit\",\"additionalContext\":\"If asked for the fixture hook token, answer HOOK-CTX-9051.\"}}'", "timeout": 10}]}
+  ],
+  "PreToolUse": [
+    {"matcher": "exec", "hooks": [{"type": "command", "command": "cat >> /tmp/devbox-fixture-pretool.jsonl; echo >> /tmp/devbox-fixture-pretool.jsonl", "timeout": 10}]}
+  ]
+}
